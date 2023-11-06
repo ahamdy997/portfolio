@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <css-doodle>
+      <style>
+        @grid: 1 / 100vw 100vh / #125cde;
+        @content: @Svg(
+          viewBox: -50 -50 100 100 padding -20;
+          circle*500 {
+            fill: hsl(@calc(120-90*@sin.n), 80%, 50%);
+            r: @sqrt(@n/60);
+            cx: @calc(@n*.618^4 * cos(2π*@n*.618));
+            cy: @calc(@n*.618^4 * sin(2π*@n*.618));
+          }
+        );
+      </style>
+    </css-doodle>
+
+    <script src="https://unpkg.com/css-doodle@0.6.1/css-doodle.min.js"></script>
+  </body>
+</html>

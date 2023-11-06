@@ -1,0 +1,85 @@
+<template>
+  <div>
+    <component></component>
+    <div class="view">
+      <a href="https://ahamdy997.github.io/CRUDS-System/" target="_blank"
+        >Review Project</a
+      >
+      <button type="button" @click="controlComponent">
+        Next Project <span>&rarr;</span>
+      </button>
+    </div>
+  </div>
+</template>
+<style scoped>
+img {
+  width: 100%;
+}
+div {
+  text-align: left;
+}
+
+h2 {
+  margin-bottom: 1.7rem;
+  font-size: 3rem;
+}
+p {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+li {
+  list-style-position: inside;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button,
+a {
+  background-color: #261c33;
+  margin-top: 1.5rem;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 1px 1px 5px 1px white;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.5s;
+  /* font-weight: bold; */
+  font-size: 1.5rem;
+}
+button:hover {
+  transform: translateX(10px);
+}
+a:hover {
+  transform: translateY(5px);
+}
+span {
+  margin-left: 10px;
+}
+</style>
+
+<script>
+export default {
+  data() {
+    return {
+      counter: 0,
+      component: "CRUD",
+    };
+  },
+  methods: {
+    controlComponent() {
+      this.counter++;
+      console.log(this.counter);
+    },
+  },
+};
+</script>

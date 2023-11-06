@@ -1,0 +1,28 @@
+<template>
+  <div>
+    <h2>Project Title: Product Management System</h2>
+    <figure>
+      <a href="https://ahamdy997.github.io/CRUDS-System/" target="_blank">
+        <img src="../assets/Screenshot (55).png" alt="Crud system" />
+      </a>
+      <div class="layer"></div>
+    </figure>
+  </div>
+</template>
+<style scoped>
+img {
+  width: 100%;
+}
+h2 {
+  margin-bottom: 1.7rem;
+}
+figure {
+}
+.layer {
+  position: absolute;
+  background-color: black;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+</style>
